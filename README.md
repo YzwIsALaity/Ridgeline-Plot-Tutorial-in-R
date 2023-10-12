@@ -5,7 +5,7 @@ layout: post
 categories: media
 ---
 
-![Cover](/Users/yonwang/Desktop/Ridgeline Plot/Fake Unknown Pleasure.jpeg)
+![](/Users/yonwang/Desktop/Ridgeline Plot/Fake Unknown Pleasure.jpeg)
 
 In this tutorial, we'll introduce the use of __ridgeline plots__ in R using the __`ggplot2` and `ggridges` packages__. These plots display a sequence of histogram or density plots stacked vertically, making it a useful tool for __visualizing changes in the distribution of a numerical variable across different time points or categories__.
 
