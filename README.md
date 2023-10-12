@@ -1,5 +1,4 @@
-
-![](/Users/yonwang/Desktop/Ridgeline Plot/Fake Unknown Pleasure.jpeg)
+![](https://raw.githubusercontent.com/YzwIsALaity/Ridgeline-Plot-Tutorial-in-R/2a324d0c39139ff786a3f0ddf6960053578386cc/Fake%20Unknown%20Pleasure.jpeg)
 
 In this tutorial, we'll introduce the use of __ridgeline plots__ in R using the __`ggplot2` and `ggridges` packages__. These plots display a sequence of histogram or density plots stacked vertically, making it a useful tool for __visualizing changes in the distribution of a numerical variable across different time points or categories__.
 
@@ -14,7 +13,7 @@ We will use a simulated dataset for this visualization. Suppose there is a 3-yea
 
 - `Numerical_PTID`: This is equivalent to `PTID`, but it is represented numerically (numerical).
 
-![](/Users/yonwang/Desktop/Ridgeline Plot/Dataset.png)
+![](https://raw.githubusercontent.com/YzwIsALaity/Ridgeline-Plot-Tutorial-in-R/2a324d0c39139ff786a3f0ddf6960053578386cc/Dataset.png)
 
 At each time point, we collected 200 observations of TNF-$\alpha$ cytokine values in pg/mL. Since we hypothesize that this cytokine is linked to pro-inflammatory processes, monitoring its values can serve as a key indicator of inflammation. We aim to investigate whether inflammatory symptoms gradually decrease after the acute period.
 
@@ -108,7 +107,7 @@ ggplot(Dt, aes(x = TNF_alpha, y = Time)) +
 grid.arrange(p1, p2, p3, p4, nrow = 2, ncol = 2)
 ```
 
-![](/Users/yonwang/Desktop/Ridgeline Plot/Ridgeline (Basic).jpeg)
+![](https://raw.githubusercontent.com/YzwIsALaity/Ridgeline-Plot-Tutorial-in-R/2a324d0c39139ff786a3f0ddf6960053578386cc/Ridgeline%20(Basic).jpeg)
 
 In the __Basic ridgeline__ plot (top left), `geom_ridgeline()` simply maps TNF-$\alpha$ values at each time point according to numerical patient IDs. In contrast, the __Density ridgeline__ plot (top right) and the __Density ridgeline with jitter points__ plot (bottom left) offer more informative visuals, displaying the density of TNF-$\alpha$ value distributions grouped by time points. If users prefer a binned version (histogram), they can opt for the __Ridgeline in bins__ plot (bottom right).
 
@@ -150,7 +149,7 @@ ggplot(data = Dt, aes(x = TNF_alpha,             # x-axis: value of TNF-alpha
 p5
 ```
 
-![](/Users/yonwang/Desktop/Ridgeline Plot/Ridgeline (Comprehensive).jpeg)
+![](https://raw.githubusercontent.com/YzwIsALaity/Ridgeline-Plot-Tutorial-in-R/2a324d0c39139ff786a3f0ddf6960053578386cc/Ridgeline%20(Comprehensive).jpeg)
 
 In this figure, we have eliminated all extraneous elements and focused solely on highlighting the density curve for TNF-$\alpha$ values. The intensity of TNF-$\alpha$ is represented by a gradient color scale.
 
@@ -192,4 +191,4 @@ ggplot(data = Dt_Plot, aes(x = Value, y = Row)) +
 p
 ```
 
-![](/Users/yonwang/Desktop/Ridgeline Plot/Fake Unknown Pleasure.jpeg)
+![](https://raw.githubusercontent.com/YzwIsALaity/Ridgeline-Plot-Tutorial-in-R/2a324d0c39139ff786a3f0ddf6960053578386cc/Fake%20Unknown%20Pleasure.jpeg)
