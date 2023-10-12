@@ -1,9 +1,3 @@
----
-title:  "Ridgeline Plot in R with ggplot2"
-mathjax: true
-layout: post
-categories: media
----
 
 ![](/Users/yonwang/Desktop/Ridgeline Plot/Fake Unknown Pleasure.jpeg)
 
